@@ -1,34 +1,25 @@
 ﻿// C Language Game FrameWork.cpp : 이 파일에는 'main' 함수가 포함됩니다. 거기서 프로그램 실행이 시작되고 종료됩니다.
 //
+#define _CRT_SECURE_NO_WARNINGS
 #include "Function.h"
 #include <conio.h>
+#include <mmsystem.h>
+#pragma comment(lib,"winmm.lib")
 
 int main()
 {
-    int x = 10, y = 15;
-    Size(30, 30);
-
+   PlaySound(TEXT("Sound.wav"), 0, SND_FILENAME | SND_ASYNC | SND_LOOP); //루프 재생
 
     while (1)
-    {
-        Clear();
-
+    {        
         if (GetAsyncKeyState(VK_LEFT))
         {
-            x--;
-
-            if (x < 0) x = 0;
         }
         if (GetAsyncKeyState(VK_RIGHT))
         {
-            x++;
-            if (x > 28) x = 28;
         }
-
-       gotoxy(x, y);
-       printf("♠");
-       Waiting(50);
     }
+
  
 }
 

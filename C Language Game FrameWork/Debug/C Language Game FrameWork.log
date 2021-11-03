@@ -1,4 +1,4 @@
 ﻿  C Language Game FrameWork.cpp
-C:\Users\Admin1\source\repos\C Language Game FrameWork\C Language Game FrameWork\Function.h(8,16): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
-C:\Users\Admin1\source\repos\C Language Game FrameWork\C Language Game FrameWork\Function.h(8,18): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
-  C Language Game FrameWork.vcxproj -> C:\Users\Admin1\source\repos\C Language Game FrameWork\Debug\C Language Game FrameWork.exe
+C:\Users\Admin1\Documents\GitHub\C-Language-Game-FrameWork\C Language Game FrameWork\Function.h(8,16): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+C:\Users\Admin1\Documents\GitHub\C-Language-Game-FrameWork\C Language Game FrameWork\Function.h(8,18): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+  C Language Game FrameWork.vcxproj -> C:\Users\Admin1\Documents\GitHub\C-Language-Game-FrameWork\Debug\C Language Game FrameWork.exe

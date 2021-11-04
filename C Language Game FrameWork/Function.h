@@ -1,7 +1,44 @@
 #pragma once
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <conio.h>
 #include <windows.h>
+#include <mmsystem.h>
+#pragma comment(lib,"winmm.lib")
 
+enum color_index 
+{
+	Black,  // 검정
+	Blue,   // 파랑
+	Green,  // 초록
+	Silver, // 은색
+	Red,    // 빨강
+	Often,  // 자주
+	Yellow, // 노랑
+	White,  // 흰색
+	Gray,   // 회색
+	Bright_Blue,   // 밝은 파랑
+	Bright_Green,  // 밝은 초록
+	Bright_Jade,   // 밝은 옥색
+	Bright_Red,    // 밝은 빨강
+	Bright_Often,  // 밝은 자주
+	Bright_Yellow, // 밝은 노랑
+	Bright_White   // 밝은 횐색
+};
+
+void Random(int Create_Value, int Value)
+{
+    // time = 1970년 1월 1일 0시 (UTC)부터 현재까지 흐른 시간을 반환합니다.
+	// 단위는 초이며, 현재 까지 흐른 시간을 구하기 위해 NULL을 전달합니다.
+
+	srand(time(NULL));
+
+	for (int i = 1; i <= Create_Value; i++) // Create_Value = 생성시키고 싶은 랜덤 수
+	{
+		printf("%d\n", (rand() % Value) + 1); // Value = 최대 크기의 랜덤 값을 지정해주는 수
+	}
+}
 
 void gotoxy(int x, int y) // x, y 좌표를 정의하는 함수
 {
@@ -62,10 +99,8 @@ void Road_Text(const char * text) // 텍스트 파일을 불러오는 함수
 	fclose(file); // 파일 닫기
 }
 
-void Color(int index) // 텍스트 색상을 변경해주는 함수
+void Color(color_index index) // 텍스트 색상을 변경해주는 함수
 {
-	// index = 색상표 번호를 입력하면 됩니다.
-	// 0 = 검정, 1 = 파랑, 2 = 초록, 3 = 은색, 4 = 빨강, 5 = 자주, 6 = 노랑, 7 = 횐색
-	// 8 = 회색, 9 = 밝은 파랑, 10 = 밝은 초록, 11 = 밝은 옥색, 12 = 밝은 빨강, 13 = 밝은 자주, 14 = 밝은 노랑, 15 = 밝은 흰색
+	// index = 색상표 번호를 입력하면 됩니다.	
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), index);
 }

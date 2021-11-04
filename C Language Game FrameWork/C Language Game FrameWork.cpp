@@ -2,16 +2,16 @@
 //
 #define _CRT_SECURE_NO_WARNINGS
 #include "Function.h"
-#include <conio.h>
-#include <mmsystem.h>
-#pragma comment(lib,"winmm.lib")
 
-int main()
+void Initialize() // 초기화를 해주는 함수
 {
-   PlaySound(TEXT("Sound.wav"), 0, SND_FILENAME | SND_ASYNC | SND_LOOP); //루프 재생
+    PlaySound(TEXT("Sound.wav"), 0, SND_FILENAME | SND_ASYNC | SND_LOOP); //루프 재생
+}
 
+void Update() // 프레임 마다 업데이트를 해야 하는 함수
+{
     while (1)
-    {        
+    {         
         if (GetAsyncKeyState(VK_LEFT))
         {
         }
@@ -19,8 +19,13 @@ int main()
         {
         }
     }
+}
 
- 
+int main()
+{
+    Initialize();
+    Update();
+
 }
 
 // 프로그램 실행: <Ctrl+F5> 또는 [디버그] > [디버깅하지 않고 시작] 메뉴

@@ -1,5 +1,5 @@
 # Game Overview
-A framework for developing c language games.
+It is a framework that can be used to easily create and use simple programs in C language.
 
 ### Game Function
 - It is designed to make it easy to use library functions by using parameters.

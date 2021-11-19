@@ -62,14 +62,6 @@ void Cursor(bool show) // bool = true(커서 ON), bool = false(커서 OFF)
 	SetConsoleCursorInfo(GetStdHandle(STD_OUTPUT_HANDLE), &cursor_info);
 }
 
-void Waiting(int Count) // 대기 상태를 만들어주는 함수
-{
-	// Sleep(1000) = 1000ms (1초) 동안 프로그램 대기
-    // 100 = 0.1초, 10000 = 10초
-
-	Sleep(Count); // 런타임(실행 중일 때) 프로그램을 일시적으로 멈춥니다.
-}
-
 void Size(int width, int Height) // 화면의 크기를 지정해주는 함수
 {
 	// sprintf_s = 출력하는 결과 값을 변수에 저장하는 함수이다.
@@ -86,14 +78,14 @@ void Size(int width, int Height) // 화면의 크기를 지정해주는 함수
 void Road_Text(const char * text) // 텍스트 파일을 불러오는 함수
 {
 	FILE* file = fopen(text,"r"); // 외부에 있는 텍스트 파일을 r(읽기) 모드로 열기
-	char buffer[1000] = { 0, };
+	char buffer[10000] = { 0, };
 
 	// buffer = char 배열
 	// 1 = 크기를 가지는 배열을 가리키는 포인터 
 	// 1000 = 읽어들일 원소의 크기로 단위는 바이트이며, size가 4 이면 하나의 원소의 크기는 4 바이트이다.
 	// file = 데이터를 입력받을 스트림의 FILE 객체를 가리키는 포인터
 
-	fread(buffer, 1, 1000, file); // 전체 읽기
+	fread(buffer, 1, 10000, file); // 전체 읽기
 	printf("%s", buffer);
 
 	fclose(file); // 파일 닫기

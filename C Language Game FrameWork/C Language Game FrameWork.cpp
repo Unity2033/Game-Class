@@ -14,25 +14,28 @@ void Update() // 프레임 마다 업데이트를 해야 하는 함수
 
     while (1)
     {              
-        gotoxy(57.5, y);
+        gotoxy(54, y);
         printf("☞");
 
         if (GetAsyncKeyState(VK_UP))
         { 
-            if (--y <= 29) y = 29;         
+            if (--y < 29) y = 29;         
         }
         if (GetAsyncKeyState(VK_DOWN)) 
         { 
-            if (++y >= 31) y = 31;
+            if (++y > 30) y = 30;
         }
-    
+ 
         switch (Count)
         {
-           case 0 :
+           case 0 :     
                Clear();
-               Road_Text("Start.txt");
+               Road_Text("Start.txt");     
         }
     }
+
+    gotoxy(0, 5);
+    Road_Text("Start Contents.txt");
 }
 
 int main()

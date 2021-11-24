@@ -28,7 +28,7 @@
     Bg5SQQQii:  :: i        7:  7i:rUS2rriKBBj                  
     IQPUBBB:7:.irvgu.   .   X    17 :ii7LJBBg              
      BMUgBB:sr.MPKEi::     .i  .r. :. 777BBM            『 밖으로 나간다. 』
-     :Bg2QB2.di.r   .:7... vr:i rdi .7rYBBK             『 게임을 종료한다.』
+     :Bg2QB2.di.r   .:7... vr:i rdi .7rYBBK             『 가만히 있는다.』
       iBBqRB.Lvii    DBJ..rQ...  .:virIgdr        
         IMDgB.5LJK7 IRbi  Ud:    ::7XX7r:         
           iIQBr7YUKKduL:..X17::::rqgi.sP          

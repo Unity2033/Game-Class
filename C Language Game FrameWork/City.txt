@@ -1,58 +1,47 @@
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                     jZZZZZZj                                       
-                                                  yZZZzDyjDzZZZw                                    
-                                                 ZZZ  wwyjyDj ZZZ                                   
-                                                ZD 5ZW wD5DjjzZBZZ                                  
-                                               Z9BZ99EZ5,8ZzZ5  WZZ                        W        
-                                              DzwZwj5,yZB   B,DDZBEZ                  D8ZZZZZ       
-                                              ZZDy58z855DZZ89EE98DyZ             yZZZZDDZZZB        
-                                              EZ8ZZEZZZZZEZZEZzZEZZZ        yZZZZy5ZZZZW            
-                                               ZZyZ 9WWjZ y9Wj ZjEBZ   wZZZZ5wZZZZ8                 
-                                        Wz     Z9Zzy DjW       Zw9ZZDZZy 8ZZZZ                      
-                         WBZ      ZZZZZZ5Zy    8jEZz9   EZZ8B 9Zj    ZZZZy                          
-                       ZZZZZ      Z wD8ZZZZjBj,B5zWZ,DZZE85zZZ8Z E8Z5                               
-                   ZZZZZZZZZZZEZB8ZZZZZE   yzZZEDE5ZZ5 y,5zDEDDZyZB                                 
-          jyzZ   wZ  E9z j  ZyDZEZZ   W8Z9ZZ99D Ez9y ZEDWjyyz8ZZyZjZjZ8                             
-      ZZZzZBEZZ BZ   Zyy BZWjZ,zzDBDzZ 5zEE  Z  ,8ZZw,BZZEZZZZ Z9,EZ EZZZZz                         
-  ZZZZEwjZZZ8ZZZZ    Z,Z5WwEyZ9,ZWj9BZZZZZD5ZW5D  ,jZZE85ZZW   BDZEw,ZZZ ZZZZy                      
-  Z Zy ZjyZ  ZWZDZZz5Z8z9yZZ8D585ZZZZ9,  jzDDEjDz5    ,8Z   DZZ9D5EWDZED,ZwjDEZZz                   
-  ZEjZ5 ZyEZ ZZZZZZZE8B9z8j ZZZZZj    BZZZZzDzZ5j5zBjW,yZ,ZZEB,j,Z BEZz,ZWDBD5yjZZ                  
-   ZDDZ Z8yZ  w595DZZZZZBEZZy jZZEZZZZDB,  Z85WzZ8jyDzDZEZ8 ,5W zEBZ j58Ewy5BDjjZZ                  
-   ZZ58Z Z5ZE Zy  w y8ZZZEZ,BZZ9 Z  jZzW5Bz8ZZ8DZBEZBB5ZZw   WZZZ yDD5DZ w   j8EZ                   
-    ZZEZ ZZEZ yZZZZ9 ZZZZZZzDBZZ ZZEZZZZZZzw,wjWZw  8Z989j5zZZZzZzZZ9 ZE, wZ9Z8jyZ                  
-     8ZZZ9ZZZZ9       9jw w88BzZZw,Z988E88ZZZZZZ8ZB , j9z9ZZE88EZZBZ9ZZZZ yZZw WwZZz                
-       DZy            Zw55jDB8D8Z9wDBZ985BD5589Z WZj     WZjDDBDjWyEZEZy ,zy ,ZZZ8BZ                
-                       ZjD5yBD8DZZZ Zj8ZZ9BBB5yDBZZZZZZZ9Z5,jjy5z9EZy89B9Z99ZZW,,E8E                
-                       Ey55yDBDzBZZz8Z8wEZEZZZ98zj   wWjDD8EZZZZZZ8DZzZZZ89, w8Z8y8ZZ               
-                        Z5W5jz5zB99ZWZEZzBZ998BDjwjBz8ZZZZZZZzWWByzDB89EE8,DZZzDE9yDZ               
-                         ZBzyzD58BBZjZ9ZWZEEZZZZZZZZE85jWw,   88ZZ9959ZZzE ZW, W,59ZB               
-                         BZDDBDB9B5ZjEE8DZ99EEZEE9zD55DB5yD9ZZZZwZE9558EzZwZE8BBzEDZW               
-                          ZZ55DByzDZjZZwZzzDj    w5z9ZZZ8ZZZEZZEZZZzB 5BzZ   zZZZZ89Z               
-                           ZZzD55z8E5Z5ZDWWjyBZZZZZZED5BZ88DBDZDB9ZB9Dz8BZZZZZW    WZ               
-                            ZZZ98z9DDZD85DBzz9E8DW  BZZ89zzEZZZZZZZD889E9ZZ8BZ wZZZZZZzB            
-                              ZZZZZ9zZ8Z5yD5yWw  5ZZ9DZ,59Zz8DBDDEZEEZZZB5DDEEZZZj  ,j9Z            
-                                yzZ9Z8w9ZDyyDBZZZZzwyZZ5zzZyyBz9BZD8DD59BBDB ZZWWjDBBzDZ            
-                                    Zj9ZBZZZZZZ9888ZZEZB8DZDBZ Z8ZWZDzBZ8E9EjZ jBDzzDD5Z            
-                                    5ZZjDEZE88Z jZEZBBZB8DZZZZ ZZZBZ888Z8E9ED9 WwwwjjD5Z            
-                                     ZZ8E Z5Z9Z jZ Z8BZBzEZ  Z5DEyZ88ZZ989E9BZ wwy5yDz5Z            
-                                     ZEZEjZ ZzZjWZ 58BZ,DzZzwZzzZD9DzzZZ89EE5Z zZE9zBDDZ            
-                                      ZZDZD9ZzZz,8ZZ8BZwW5ZZ5ZE9ZzZZZE8Zz9EEyZ Wwwww5zBZ            
-                                      ZZZZ95zEZZBBBzBEZZ99ZZ ZBDZD9WDBzZz99EBZ ,yyy5D8zZ            
-                                      5ZZZZZBzBBEZZE9Z8BE9zZBZZEZZZ9ZZZZZZZZZzZ wyBDj5zZ            
-                                       w   ZyjZDB99999EEEEEEE98zEjy5D5jZ  ,   ZZ,wDjB98Z            
-                                           Zy55Z    ,wjyyjjWWWy8EWyyjw588      ZZ jyDD8Z            
-                                          BD ,5yZ 8ZZzWyywDyD,8Ejy5yy9ZZZ      ZZ wy5DZ8            
-                                          ZZy,WjZ89z9B jj ZDZyZ8,, EZy, E      ZZ8,DWBZD            
-                                          Z8Zz yZ ZBBB    Z ZzwZw 5ZywWw Z     ZZZ WyBZ             
-                                          wDzZZZBBzEjZEZZZZ Z yyZ ZBB8ZZZZ,    8EZZ895Z             
-                                               Z ,jZwZ5zDWZ Z,DjyZ8,w     W        ZZEZ             
-                                                Z  Z 8 jBBZ Z5z5ZZ                   zZ             
-                                                 Z Z,Z    wwZ wZZ5                                  
-                                                  yZD8    ,ZZ Z                                     
-                                                    E       ZE                                      
-                                                     DZj   Z5                                       
-                                                          ,,                                        
-                                                                                                    
+         
+                     ZZZZZE          
+                    ZZWwwjZZ         
+                 EZ Z9EBBEEZ         
+               ZZZ yZ,wWy, ZD        
+             ZZZ8   DZ8ZZ8E9         
+         DyZZZ        z55By          
+       ,99BDz        j9BzZD          
+      E8yjD9E    jBZZz5BDy,ZZZj      
+     ZZEE89z yZZZZzD55,   yD5zDZZ,   
+     Z8Dj8558E8W  WyDBzDwD5y59E85Z   
+      BZEz5BBzzDDB5B88EB899ZzWWWjZj  
+        ,DZZZZEZ58B8By5y5W,DDzBBZ9Z  
+              ,yDDW,wyyj5wW y5W5ByZ  
+                z9B5j8EDD8Z5yjjj,5Z  
+                 zB8yj8jDEBWDw9D5DZj                  멀리 서있는 군인이 나에게 경례를 한다.
+                 Ey5yyyyDjjD5w9ZE8ZE                  대체 뭐 때문에 나에게 경례를 하는거지? 
+                 ZB5jWjwW   WWz ,yzZ               
+                 Z9zDBBDD5zzBzZBB8Z                   지금 군인들은 대체로 힘이 없는 상태다.
+                 Ey555D5DEz8zwE5zZ                    나는 어떻게 해야할 지... 고민이 된다.
+                ,E599D5j55585jzZZ                 
+                BzWw,5DD8j ,wj Z                      한 가지 중요한 점은 지금 시대에 나 혼자 
+                ZE8B559DDDD5B9yZ                      살아가긴 어렵다.
+                ED5D555w55BzBy8ZB              
+               w88yBEzE5yyBB9ZZ9                      분명, 누군가 함께 할 사람이 필요하다. 
+                 9yWwyBBzjwW5D8               
+                 Z8BzDBzzjyDDDZ                       그렇다고 저 사람이 나에게 호의적이라고 
+                 ZBDzz5zz8zzBwZ                       생각해서도 안된다.   
+                 99ZB8zzBy5EZ8Z                               
+                 W5,,yWBzWjwwBZ      
+                 5Z9DWyDB55jjyZ      
+                 wZz9E8Zzz59EEZ      
+                  9,jy,D5wwD,yZ      
+                  Z85BBE85DBDEZ      
+                  Ejzzj5DBEE8Zy      
+                  BB8B8ZBy5yjZ       
+                  9WyjwBy   wZ       
+                  ZZ8BzE zBZZZ       
+                    B9BZ Z5Z         
+                     E5Z ED9         
+                     ZBE EzZ         
+                    8zzW 95Zj        
+                   yZBZ  ZB8Z        
+                   Z9zZ  Z9zZ        
+                   ZZZ5  jZZZ        
+                                     
+                                     

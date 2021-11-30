@@ -14,7 +14,9 @@ float percent; // 퍼센트 저장 변수
 
 void Update() // 프레임 마다 업데이트를 해야 하는 함수
 {
-    int y = 30;
+    char key;
+    int y = 29;
+
     Road_Text("Screen.txt");
 
     while (count <= 100)
@@ -36,38 +38,50 @@ void Update() // 프레임 마다 업데이트를 해야 하는 함수
         }
 
         printf("] %0.2f%%", percent); // 퍼센트 출력
-        count += 2;
-        Sleep(35);
+        count += 1;
+        Sleep(10);    
     }
+
+    Clear();
+    if (Count == 0) Road_Text("Start.txt");
      
     while (1)
     {              
         gotoxy(54, y);
-        printf("☞");
-        Clear();
+        printf("☞");  
 
-        if (GetAsyncKeyState(VK_UP))
-        { 
-            if (--y < 29) y = 29;      
+        key = _getch();
+
+        if (key == -32)
+        {
+            key = _getch();
+
+            switch (key)
+            {
+               case 72: if (--y < 29) y = 29; break;
+               case 80: if (++y > 30) y = 30; break;
+            }
         }
-        if (GetAsyncKeyState(VK_DOWN)) 
-        { 
-            if (++y > 30) y = 30;
-        }      
-
+        
         if (GetAsyncKeyState(VK_SPACE))
         {
-            Sleep(500);
+            Sleep(100);
 
-            if (y == 29) Count += 1;        
-            if (y == 30) Count += 2;         
-        }
-
-        if (Count == 0) Road_Text("Start.txt");    
-        else if (Count == 1) Road_Text("City.txt");
-        else if (Count == 2) return;
-        else if (Count == 3) Road_Text("Screen.txt");
+            if (y == 29) Count += 1;
+            if (y == 30) Count += 2;
+        }         
+        
+        Clear();
     
+        if (Count == 0) Road_Text("Start.txt");
+        else if (Count == 1) Road_Text("City.txt");
+        else if (Count == 2)
+        {
+            Road_Text("Hypothermia.txt");
+            break;
+        }
+        else if (Count == 3) Road_Text("Screen.txt");
+
     }
 }
 

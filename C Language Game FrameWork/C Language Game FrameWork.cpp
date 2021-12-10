@@ -12,6 +12,7 @@ float tick = (float) 100 / 20; // 몇 % 마다 프로그레스바 추가할 지 
 int bar_count; // 프로그레스바 갯수 저장 변수
 float percent; // 퍼센트 저장 변수
 
+
 void Update() // 프레임 마다 업데이트를 해야 하는 함수
 {
     char key;
@@ -44,9 +45,9 @@ void Update() // 프레임 마다 업데이트를 해야 하는 함수
 
     Clear();
     if (Count == 0) Road_Text("Start.txt");
-     
+    
     while (1)
-    {              
+    {     
         gotoxy(54, y);
         printf("☞");  
 
@@ -62,7 +63,7 @@ void Update() // 프레임 마다 업데이트를 해야 하는 함수
                case 80: if (++y > 30) y = 30; break;
             }
         }
-        
+       
         if (GetAsyncKeyState(VK_SPACE))
         {
             Sleep(100);
@@ -73,15 +74,23 @@ void Update() // 프레임 마다 업데이트를 해야 하는 함수
         
         Clear();
     
-        if (Count == 0) Road_Text("Start.txt");
-        else if (Count == 1) Road_Text("City.txt");
-        else if (Count == 2)
+        switch (Count)
         {
-            Road_Text("Hypothermia.txt");
-            break;
+            case 0:
+                Road_Text("Start.txt");
+                break;
+            case 1:
+                Road_Text("City.txt");
+                break;
+            case 2:
+                Road_Text("Model.txt");
+                break;
+            case 3:        
+                Road_Text("Death.txt");
+                exit(0);
+                break;
         }
-        else if (Count == 3) Road_Text("Screen.txt");
-
+              
     }
 }
 
@@ -91,6 +100,5 @@ int main()
     PlaySound(TEXT("Sound.wav"), 0, SND_FILENAME | SND_ASYNC | SND_LOOP); //루프 재생
 
     Update();
-
 }
 

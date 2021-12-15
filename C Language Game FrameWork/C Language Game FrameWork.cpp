@@ -68,8 +68,27 @@ void Update() // 프레임 마다 업데이트를 해야 하는 함수
         {
             Sleep(100);
 
-            if (y == 29) Count += 1;
-            if (y == 30) Count += 2;
+            switch (Count)
+            {               
+                case 0:
+                {
+                    if (y == 29) Count = 1;
+                    if (y == 30) Count = 2;
+                    break;
+                }
+                case 1:
+                {
+                    if (y == 29) Count = 4;
+                    if (y == 30) Count = 3;
+                    break;
+                }
+                case 2:
+                {
+                    if (y == 29) Count = 3;
+                    if (y == 30) Count = 5;
+                    break;
+                }
+            }
         }         
         
         Clear();
@@ -89,6 +108,9 @@ void Update() // 프레임 마다 업데이트를 해야 하는 함수
                 Road_Text("Death.txt");
                 exit(0);
                 break;
+            case 4:
+                Road_Text("Statue.txt");
+                break;
         }
               
     }
@@ -97,6 +119,9 @@ void Update() // 프레임 마다 업데이트를 해야 하는 함수
 int main()
 {
     Size(100, 50);  
+
+    system("title metro 2033");
+
     PlaySound(TEXT("Sound.wav"), 0, SND_FILENAME | SND_ASYNC | SND_LOOP); //루프 재생
 
     Update();

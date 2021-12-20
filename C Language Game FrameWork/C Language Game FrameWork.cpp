@@ -88,6 +88,18 @@ void Update() // 프레임 마다 업데이트를 해야 하는 함수
                     if (y == 30) Count = 5;
                     break;
                 }
+                case 4:
+                {
+                    if (y == 29) Count = 6;
+                    if (y == 30) Count = 7;
+                    break;
+                }
+                case 5:
+                {
+                    if (y == 29) Count = 8;
+                    if (y == 30) Count = 9;
+                    break;
+                }
             }
         }         
         
@@ -104,12 +116,22 @@ void Update() // 프레임 마다 업데이트를 해야 하는 함수
             case 2:
                 Road_Text("Model.txt");
                 break;
-            case 3:        
+            case 3:         
                 Road_Text("Death.txt");
                 exit(0);
                 break;
             case 4:
                 Road_Text("Statue.txt");
+                break;
+            case 5:
+                Road_Text("Footprint.txt");
+                break;
+            case 6:
+                Road_Text("Map.txt");
+                break;
+            case 8:
+                Road_Text("Death.txt");
+                exit(0);
                 break;
         }
               
@@ -126,4 +148,3 @@ int main()
 
     Update();
 }
-

@@ -77,6 +77,8 @@ void Size(int width, int Height) // 화면의 크기를 지정해주는 함수
 
 void Road_Text(const char * text) // 텍스트 파일을 불러오는 함수
 {
+	int i = 0;
+
 	FILE* file = fopen(text,"r"); // 외부에 있는 텍스트 파일을 r(읽기) 모드로 열기
 	char buffer[10000] = { 0, };
 
@@ -87,6 +89,13 @@ void Road_Text(const char * text) // 텍스트 파일을 불러오는 함수
 
 	fread(buffer, 1, 10000, file); // 전체 읽기
 	printf("%s", buffer);
+
+	//while (text[i] != 0)
+	//{
+	//	printf("%c", text[i++]);
+	//	fflush(stdout);
+	//	Sleep(100);
+	//}
 
 	fclose(file); // 파일 닫기
 }

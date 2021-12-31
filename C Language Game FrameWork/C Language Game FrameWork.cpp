@@ -102,7 +102,7 @@ void Update() // 프레임 마다 업데이트를 해야 하는 함수
                 }
             }
         }         
-        
+       
         Clear();
     
         switch (Count)
@@ -116,10 +116,6 @@ void Update() // 프레임 마다 업데이트를 해야 하는 함수
             case 2:
                 Road_Text("Model.txt");
                 break;
-            case 3:         
-                Road_Text("Death.txt");
-                exit(0);
-                break;
             case 4:
                 Road_Text("Statue.txt");
                 break;
@@ -129,10 +125,10 @@ void Update() // 프레임 마다 업데이트를 해야 하는 함수
             case 6:
                 Road_Text("Map.txt");
                 break;
-            case 8:
+            case 9:
+                Road_Text("Bomb.txt");
+            default:
                 Road_Text("Death.txt");
-                exit(0);
-                break;
         }
               
     }
@@ -147,4 +143,6 @@ int main()
     PlaySound(TEXT("Sound.wav"), 0, SND_FILENAME | SND_ASYNC | SND_LOOP); //루프 재생
 
     Update();
+
+    return 0;
 }

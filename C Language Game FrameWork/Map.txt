@@ -27,9 +27,8 @@
        wZZZZZZZZZZZZZZZEEZZEjZZZZZZZZZZZZZZZZZZZZZZ   만약... 이 지도를 따라갔지만, 위험한  
                                                       곳이면 어떡하지?
                                                        
-                                                        『 지도를 조금 더 살펴본다. 』
                                                         『 지도에 표시되어 위치로 간다. 』
-                                                       
+                                                        『 내가 생각한 길을 찾아 간다. 』
                                                        
                                                        
                                                        

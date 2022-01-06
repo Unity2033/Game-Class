@@ -83,7 +83,7 @@ void Road_Text(const char * text) // 텍스트 파일을 불러오는 함수
 
 	// buffer = char 배열
 	// 1 = 크기를 가지는 배열을 가리키는 포인터 
-	// 1000 = 읽어들일 원소의 크기로 단위는 바이트이며, size가 4 이면 하나의 원소의 크기는 4 바이트이다.
+	// 10000 = 읽어들일 원소의 크기로 단위는 바이트이며, size가 4 이면 하나의 원소의 크기는 4 바이트이다.
 	// file = 데이터를 입력받을 스트림의 FILE 객체를 가리키는 포인터
 
 	fread(buffer, 1, 10000, file); // 전체 읽기
@@ -100,7 +100,7 @@ void Typing(const char * text)
     {
 	   printf("%c", text[i++]);
 	   fflush(stdout);
-	   Sleep(100);
+	   Sleep(10);
     }
 }
 

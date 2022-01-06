@@ -21,14 +21,14 @@
            ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ                                
            ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ                                
             ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ                                 
-            zZZZZZZZZZZZZZZZZZZZ        Zz                                 
+            zZZZZZZZZZZZZZZZZZZZ        Zz                                
             ZZZZZZZZZZZZZZZZZZZZ        Z                                  
            ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ5                                  
          wZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ                                   
          ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ                                    
          ZZZZZZZZZZZZZZZZZZZZZZZZZZZZ,                                     
-          ZZZZZZZZZZZZZZZZZZZZZZZZZZZ                                      
-           ZZZZZZZZZZZZZZZZZZZZZZZZZ                                       
+          ZZZZZZZZZZZZZZZZZZZZZZZZZZZ                   『 다시 시작 』               
+           ZZZZZZZZZZZZZZZZZZZZZZZZZ                    『 게임 종료 』              
             DZZZZZZZZZZZZZZZZZZZZZZZ                                       
               ZZZZZZZZZZZZZZZZZZZZZZ,                                      
                 DZZZZZZZZZZZZZZZZZZ5                                       

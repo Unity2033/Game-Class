@@ -11,12 +11,13 @@ int count = 0;
 float tick = (float) 100 / 20; // 몇 % 마다 프로그레스바 추가할 지 계산
 int bar_count; // 프로그레스바 갯수 저장 변수
 float percent; // 퍼센트 저장 변수
-
+int Life = 0;
 
 void Update() // 프레임 마다 업데이트를 해야 하는 함수
 {
     char key;
     int y = 29;
+    int x = 0;
 
     Road_Text("Screen.txt");
 
@@ -39,98 +40,87 @@ void Update() // 프레임 마다 업데이트를 해야 하는 함수
         }
 
         printf("] %0.2f%%", percent); // 퍼센트 출력
+
         count += 1;
         Sleep(10);    
     }
 
-    Clear();
-    if (Count == 0) Road_Text("Start.txt");
-    
     while (1)
-    {     
-        gotoxy(54, y);
-        printf("☞");  
+    {         
+        gotoxy(x, y);
+        printf("☞");
 
-        key = _getch();
-
-        if (key == -32)
+        if (x > 0)
         {
             key = _getch();
 
-            switch (key)
+            if (key == -32)
             {
-               case 72: if (--y < 29) y = 29; break;
-               case 80: if (++y > 30) y = 30; break;
+                key = _getch();
+
+                switch (key)
+                {
+                   case 72 : if (--y < 29) y = 29; break;
+                   case 80 : if (++y > 30) y = 30; break;
+                }
             }
-        }
-       
+        }  
+
         if (GetAsyncKeyState(VK_SPACE))
         {
             Sleep(100);
 
-            switch (Count)
-            {               
-                case 0:
-                {
-                    if (y == 29) Count = 1;
-                    if (y == 30) Count = 2;
-                    break;
-                }
-                case 1:
-                {
-                    if (y == 29) Count = 4;
-                    if (y == 30) Count = 3;
-                    break;
-                }
-                case 2:
-                {
-                    if (y == 29) Count = 3;
-                    if (y == 30) Count = 5;
-                    break;
-                }
-                case 4:
-                {
-                    if (y == 29) Count = 6;
-                    if (y == 30) Count = 7;
-                    break;
-                }
-                case 5:
-                {
-                    if (y == 29) Count = 8;
-                    if (y == 30) Count = 9;
-                    break;
-                }
+            if (Life == 0)
+            {
+                if (y == 29) Count += 1;
+                if (y == 30) Count += -10;
             }
-        }         
-       
+            else
+            {
+                if (y == 29)
+                {
+                    Life = 0;
+                    Count = 0;
+                }
+                if (y == 30) exit(0);
+            }     
+        }
+
+        x = 54;
+
         Clear();
-    
+
         switch (Count)
         {
-            case 0:
+            case 0 : 
                 Road_Text("Start.txt");
                 break;
-            case 1:
-                Road_Text("City.txt");
+            case 1 : 
+                Road_Text("City.txt"); 
                 break;
-            case 2:
-                Road_Text("Model.txt");
+            case -10 : 
+                Road_Text("Model.txt"); 
                 break;
-            case 4:
-                Road_Text("Statue.txt");
+            case 2 :
+                Road_Text("Statue.txt"); 
                 break;
-            case 5:
+            case -20 : 
                 Road_Text("Footprint.txt");
                 break;
-            case 6:
+            case 3 :
+                Road_Text("Map.txt");
+                break;           
+            case -30:
                 Road_Text("Map.txt");
                 break;
-            case 9:
-                Road_Text("Bomb.txt");
-            default:
+            case -7 :
+           
+                Sleep(5000);
+                return;
+            default :
                 Road_Text("Death.txt");
-        }
-              
+                Life = 1;           
+        }            
     }
 }
 
@@ -143,6 +133,8 @@ int main()
     PlaySound(TEXT("Sound.wav"), 0, SND_FILENAME | SND_ASYNC | SND_LOOP); //루프 재생
 
     Update();
+
+    Road_Text("End.txt");
 
     return 0;
 }

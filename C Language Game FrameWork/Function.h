@@ -8,6 +8,13 @@
 
 #pragma comment(lib,"winmm.lib")
 
+const char bar = '='; // 프로그레스바 문자
+const char blank = ' '; // 비어있는 프로그레스바 문자
+
+float tick = (float)100 / 20; // 몇 % 마다 프로그레스바 추가할 지 계산
+int bar_count; // 프로그레스바 갯수 저장 변수
+float percent; // 퍼센트 저장 변수
+
 enum color_index 
 {
 	Black,  // 검정
@@ -76,7 +83,7 @@ void Size(int width, int Height) // 화면의 크기를 지정해주는 함수
 	system(command);
 }
 
-void Road_Text(const char * text) // 텍스트 파일을 불러오는 함수
+void Load_Text(const char * text) // 텍스트 파일을 불러오는 함수
 {
 	FILE* file = fopen(text,"r"); // 외부에 있는 텍스트 파일을 r(읽기) 모드로 열기
 	char buffer[10000] = { 0, };

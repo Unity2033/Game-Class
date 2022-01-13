@@ -12,7 +12,7 @@ void Update() // 프레임 마다 업데이트를 해야 하는 함수
     int y = 29;
     int x = 0;
 
-    Load_Text("Screen.txt");
+    Load_Text("Resource/Screen.txt");
 
     while (count <= 100)
     {
@@ -88,37 +88,36 @@ void Update() // 프레임 마다 업데이트를 해야 하는 함수
         switch (Count)
         {
             case 0 : 
-                Load_Text("Start.txt");
+                Load_Text("Resource/Start.txt");
                 break;
             case 1 : 
-                Load_Text("City.txt");
+                Load_Text("Resource/City.txt");
                 break;
             case -10 : 
-                Load_Text("Model.txt");
+                Load_Text("Resource/Model.txt");
                 break;
             case 2 :
-                Load_Text("Statue.txt");
+                Load_Text("Resource/Statue.txt");
                 break;
             case -20 : 
-                Load_Text("Footprint.txt");
+                Load_Text("Resource/Footprint.txt");
                 break;
             case 3 :
-                Load_Text("Map.txt");
+                Load_Text("Resource/Map.txt");
                 break;      
             case -29:
-                Color(Red);
-                Load_Text("Failure.txt");
+                Load_Text("Resource/Failure.txt");
                 Sleep(10000);
                 return;
             case -30:
-                Load_Text("Bomb.txt");
+                Load_Text("Resource/Bomb.txt");
                 break;
             case -7 :
-                Load_Text("Rescue.txt");
+                Load_Text("Resource/Rescue.txt");
                 Sleep(10000);
                 return;
             default :
-                Load_Text("Death.txt");
+                Load_Text("Resource/Death.txt");
                 Life = 1;           
         }            
     }
@@ -136,7 +135,9 @@ int main()
 
     Clear();
 
-    Load_Text("Ending.txt");
+    Load_Text("Resource/Ending.txt");
+
+    system("pause>null");
 
     return 0;
 }

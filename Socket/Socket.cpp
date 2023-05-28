@@ -1,17 +1,8 @@
-﻿#include <stdio.h>
-#include <WS2tcpip.h>
-#include <winsock2.h>
+﻿#include <winsock2.h>
+#include <ws2tcpip.h>
+#include <stdio.h>
 
 #pragma comment(lib, "ws2_32.lib")
-
-void ErrorHandling(const char* message)
-{
-    fputs(message, stderr);
-    fputc('\n', stderr);
-
-    exit(1);
-}
-
 
 int main()
 {
@@ -74,7 +65,7 @@ int main()
 
 
     // AF_INET : 인터넷 프로토콜 버전 4(IPv4) 주소
-    
+
     // Socket Type
     // SOCK_STREAM : OOB 데이터 전송 매커니즘을 사용하여 순차적이고 
     // 신뢰할 수 있는 양방향 연결 기반 바이트 스트림을 제공하는 소켓 유형입니다.

@@ -15,21 +15,33 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Program.cpp">
+    <ClCompile Include="Source.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Vulture.cpp">
+    <ClCompile Include="..\Program\Hammer.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Terran.cpp">
+    <ClCompile Include="..\Program\Knife.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Program\knuckles.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Program\Weapon.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Vulture.h">
+    <ClInclude Include="..\Program\Hammer.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Terran.h">
+    <ClInclude Include="..\Program\Knife.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Program\knuckles.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Program\Weapon.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

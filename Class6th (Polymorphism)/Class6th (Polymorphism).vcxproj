@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{9fbc6f0d-e9a3-4bd3-86be-de4bf26cacbb}</ProjectGuid>
-    <RootNamespace>Program</RootNamespace>
+    <ProjectGuid>{f05f8453-0c15-41b5-859f-812dcd4c8f39}</ProjectGuid>
+    <RootNamespace>Class6thPolymorphism</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,13 +127,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Program.cpp" />
-    <ClCompile Include="Terran.cpp" />
-    <ClCompile Include="Vulture.cpp" />
+    <ClCompile Include="..\Program\Hammer.cpp" />
+    <ClCompile Include="..\Program\Knife.cpp" />
+    <ClCompile Include="..\Program\knuckles.cpp" />
+    <ClCompile Include="..\Program\Weapon.cpp" />
+    <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Terran.h" />
-    <ClInclude Include="Vulture.h" />
+    <ClInclude Include="..\Program\Hammer.h" />
+    <ClInclude Include="..\Program\Knife.h" />
+    <ClInclude Include="..\Program\knuckles.h" />
+    <ClInclude Include="..\Program\Weapon.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

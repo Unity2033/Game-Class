@@ -1,31 +1,23 @@
 ﻿#include <iostream>
-#include "Knife.h"
-#include "Hammer.h"
-#include "knuckles.h"
+#include "Vulture.h"
 
 using namespace std;
 
 int main()
 {
-#pragma region 다형성
-	// 여러 개의 서로 다른 객체가 동일한 기능을 서로
-	// 다른 방법으로 처리할 수 있는 작업입니다.
+#pragma region 가상 함수
+	// 상속하는 클래스 내에서 같은 형태의 함수로
+	// 재정의될 수 있는 함수입니다.
 
-	Weapon weapon;
-	Knife knife;
-	Hammer hammer;
-	knuckles knuckles;
+	Terran * terran = new Vulture;
 
-	weapon.Attack();
-	knife.Attack();
-	hammer.Attack();
-	knuckles.Attack();
+	cout << "Vulture의 크기 : " << sizeof(Vulture) << endl;
 
-	// 다형성은 컴파일 시점에 함수와 속성이 결정되는
-	// 정적 바인딩을 하지 않고, 실행 시간에 함수와
-	// 속성이 결정될 수 있는 동적 바인딩을 가능하게 합니다.
+	terran->Move();
+
+	// 가상 함수 실행 시간에 상위 클래스에 대한 참조로
+	// 하위 클래스에 재정의된 함수를 호출할 수 있습니다.
 #pragma endregion
-
 
 
 	return 0;

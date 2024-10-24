@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{9fbc6f0d-e9a3-4bd3-86be-de4bf26cacbb}</ProjectGuid>
-    <RootNamespace>Program</RootNamespace>
+    <ProjectGuid>{bb1b7737-a82b-48ea-80a8-acab65961d6a}</ProjectGuid>
+    <RootNamespace>Class7thVirtualFunction</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,13 +127,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Banana.cpp" />
-    <ClCompile Include="Fruit.cpp" />
-    <ClCompile Include="Program.cpp" />
+    <ClCompile Include="..\Program\Goliath.cpp" />
+    <ClCompile Include="..\Program\SiegeTank.cpp" />
+    <ClCompile Include="..\Program\Terran.cpp" />
+    <ClCompile Include="..\Program\Vulture.cpp" />
+    <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Banana.h" />
-    <ClInclude Include="Fruit.h" />
+    <ClInclude Include="..\Program\Goliath.h" />
+    <ClInclude Include="..\Program\SiegeTank.h" />
+    <ClInclude Include="..\Program\Terran.h" />
+    <ClInclude Include="..\Program\Vulture.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

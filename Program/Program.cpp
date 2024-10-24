@@ -1,23 +1,24 @@
 ﻿#include <iostream>
-#include "Vulture.h"
+#include "Banana.h"
 
 using namespace std;
 
 int main()
 {
-#pragma region 가상 함수
-	// 상속하는 클래스 내에서 같은 형태의 함수로
-	// 재정의될 수 있는 함수입니다.
+#pragma region 가상 소멸자
+	// 객체가 소멸될 때 현재 참고하고 있는 객체와
+	// 상관 없이 모두 호출되는 소멸자입니다.
 
-	Terran * terran = new Vulture;
+	Fruit * fruit = new Banana();
 
-	cout << "Vulture의 크기 : " << sizeof(Vulture) << endl;
+	delete fruit;
 
-	terran->Move();
-
-	// 가상 함수 실행 시간에 상위 클래스에 대한 참조로
-	// 하위 클래스에 재정의된 함수를 호출할 수 있습니다.
+	// 상속된 객체가 해제될 때 하위 클래스의 소멸자가
+	// 먼저 실행되고, 상위 클래스의 소멸자가 실행되어야
+	// 하기 때문에 실행 시간에 메모리에 할당된 객체를
+	// 확인하고 차례대로 소멸시켜야 합니다.
 #pragma endregion
+
 
 
 	return 0;

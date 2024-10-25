@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class6th (Polymorphism)", "
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class7th (Virtual Function)", "..\Class7th (Virtual Function)\Class7th (Virtual Function).vcxproj", "{BB1B7737-A82B-48EA-80A8-ACAB65961D6A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class8th (Abstract)", "..\Class8th (Abstract)\Class8th (Abstract).vcxproj", "{EBB22C01-BC54-43D1-B6DF-FA448EF87F67}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -91,6 +93,14 @@ Global
 		{BB1B7737-A82B-48EA-80A8-ACAB65961D6A}.Release|x64.Build.0 = Release|x64
 		{BB1B7737-A82B-48EA-80A8-ACAB65961D6A}.Release|x86.ActiveCfg = Release|Win32
 		{BB1B7737-A82B-48EA-80A8-ACAB65961D6A}.Release|x86.Build.0 = Release|Win32
+		{EBB22C01-BC54-43D1-B6DF-FA448EF87F67}.Debug|x64.ActiveCfg = Debug|x64
+		{EBB22C01-BC54-43D1-B6DF-FA448EF87F67}.Debug|x64.Build.0 = Debug|x64
+		{EBB22C01-BC54-43D1-B6DF-FA448EF87F67}.Debug|x86.ActiveCfg = Debug|Win32
+		{EBB22C01-BC54-43D1-B6DF-FA448EF87F67}.Debug|x86.Build.0 = Debug|Win32
+		{EBB22C01-BC54-43D1-B6DF-FA448EF87F67}.Release|x64.ActiveCfg = Release|x64
+		{EBB22C01-BC54-43D1-B6DF-FA448EF87F67}.Release|x64.Build.0 = Release|x64
+		{EBB22C01-BC54-43D1-B6DF-FA448EF87F67}.Release|x86.ActiveCfg = Release|Win32
+		{EBB22C01-BC54-43D1-B6DF-FA448EF87F67}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -43,6 +43,29 @@ public:
         }
     }
 
+    void Append(const char * word)
+    {
+        int resize = size;
+
+        size = size + strlen(word) + 1;
+
+        char * newPointer = new char[size];
+
+        for (int i = 0; i < resize; i++)
+        {
+            newPointer[i] = pointer[i];
+        }
+
+        for (int i = 0; i < strlen(word) + 1; i++)
+        {
+            newPointer[resize + i] = word[i];
+        }
+
+         delete[] pointer;
+        
+        pointer = newPointer;
+    }
+
     const int& Size()
     {
         return size - 1;
@@ -64,23 +87,33 @@ public:
 
 int main()
 {
-    String string;
+     // String string;
+     // 
+     // string = "key";
+     // 
+     // for (int i = 0; i < string.Size(); i++)
+     // {
+     //     cout << string[i];
+     // }
+     // 
+     // cout << endl;
+     // 
+     // string = "apple";
+     // 
+     // for (int i = 0; i < string.Size(); i++)
+     // {
+     //     cout << string[i];
+     // }
+     // 
+     // cout << endl;
+     // 
+     // string.Append(" Four");
+     // string.Append(" x");
+     // 
+     // for (int i = 0; i < string.Size(); i++)
+     // {
+     //     cout << string[i];
+     // }
 
-    string = "key";
-
-    for (int i = 0; i < string.Size(); i++)
-    {
-        cout << string[i];
-    }
-
-    cout << endl;
-
-    string = "apple";
-
-    for (int i = 0; i < string.Size(); i++)
-    {
-        cout << string[i];
-    }
-
-    return 0;
+     return 0;
 }

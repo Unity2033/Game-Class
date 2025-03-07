@@ -1,123 +1,66 @@
 ﻿#include <iostream>
 
-#define SIZE 8
+#define SIZE 10
 
 using namespace std;
 
-template <typename T>
-class PriorityQueue
+template<typename T>
+class AdjacencyMatrix
 {
 private:
-    int index;
-    T container[SIZE];
+    int size; // 정점의 개수
+    T vertex[SIZE]; // 정점의 집합
+    int matrix[SIZE][SIZE]; // 인접 행렬
+
 public:
-    PriorityQueue()
+    AdjacencyMatrix()
     {
-        index = 0;
-        
+        size = 0;
+
         for (int i = 0; i < SIZE; i++)
         {
-            container[i] = NULL;
+            vertex[i] = NULL;
+
+            for (int j = 0; j < SIZE; j++)
+            {
+                matrix[i][j] = 0;
+            }
         }
     }
 
     void push(T data)
     {
-        if (index + 1 >= SIZE)
+        if (size >= SIZE)
         {
-            cout << "Priority Queue Overflow" << endl;
-        }                                     
-        else
-        {
-            container[++index] = data;
-
-            int child = index;
-            int parent = child / 2;
-
-            while (child > 1)
-            {
-                if (container[parent] < container[child])
-                {
-                    std::swap(container[parent], container[child]);
-                }
-
-                child = parent;
-                parent = child / 2;
-            }
-        }
-    }
-
-    void pop()
-    {
-        if (index <= 0)
-        {
-            cout << "Priority Queue is Empty" << endl;
+            cout << "Adjacency Matrix Overflow" << endl;
         }
         else
         {
-            container[1] = container[index];
-
-            container[index--] = NULL;
-
-            int parent = 1;
-
-            while (parent * 2 <= index)
-            {
-                int child = parent * 2;
-
-                if (container[child] < container[child + 1])
-                {
-                    child++;
-                }
-
-                if (container[child] < container[parent])
-                {
-                    break;
-                }
-                else
-                {
-                    std::swap(container[parent], container[child]);
-
-                    parent = child;
-                }
-            }
-        }
+            vertex[size++] = data;
+        }        
     }
 
-    const T & top()
+    void edge(int i, int j)
     {
-        return container[1];
-    }
-
-    const bool & empty()
-    {
-        if (index <= 0)
+        if (size <= 0)
         {
-            return true;
+            cout << "Ajancency Matrix is Empty" << endl;
+        }
+        else if (i >= size || j >= size)
+        {
+            cout << "Index Out of Range" << endl;
         }
         else
         {
-            return false;
+            matrix[i][j] = 1;
+            matrix[j][i] = 1;
         }
     }
 };
 
 int main()
 {
-    PriorityQueue<int> priorityQueue;
 
-    priorityQueue.push(5);
-    priorityQueue.push(17);
-    priorityQueue.push(3);
-    priorityQueue.push(1);
-    priorityQueue.push(9);
-
-    while (priorityQueue.empty() == false)
-    {
-        cout << priorityQueue.top() << endl;
-
-        priorityQueue.pop();
-    }
 
     return 0;
 }

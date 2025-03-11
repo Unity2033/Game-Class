@@ -1,7 +1,5 @@
 ﻿#include <iostream>
 
-#define SIZE 10
-
 using namespace std;
 
 template<typename T>
@@ -9,35 +7,33 @@ class AdjacencyMatrix
 {
 private:
     int size; // 정점의 개수
-    T vertex[SIZE]; // 정점의 집합
-    int matrix[SIZE][SIZE]; // 인접 행렬
+    int matrixSize; // 인접 행렬의 개수
+    int capacity; // 인접 행렬의 메모리
+    T * vertex; // 정점의 집합
+    int ** matrix; // 인접 행렬
 
 public:
     AdjacencyMatrix()
     {
         size = 0;
-
-        for (int i = 0; i < SIZE; i++)
-        {
-            vertex[i] = NULL;
-
-            for (int j = 0; j < SIZE; j++)
-            {
-                matrix[i][j] = 0;
-            }
-        }
+        capacity = 0;
+        matrixSize = 0;
+        vertex = nullptr;
+        matrix = nullptr;
     }
 
     void push(T data)
     {
-        if (size >= SIZE)
+        if (capacity <= 0)
         {
-            cout << "Adjacency Matrix Overflow" << endl;
+            resize(1);
         }
-        else
+        else if (size >= capacity)
         {
-            vertex[size++] = data;
+            resize(capacity * 2);
         }
+
+        vertex[size++] = data;  
     }
 
     void edge(int i, int j)
@@ -52,29 +48,109 @@ public:
         }
         else
         {
+            if (matrix == nullptr)
+            {
+                create();
+            }
+            else if (matrixSize < size)
+            {
+                matrix_resize();
+            }
+
             matrix[i][j] = 1;
             matrix[j][i] = 1;
+        }
+    }
+    
+    void matrix_resize()
+    {
+        int** newMatrix = new int* [size];
+
+        for (int i = 0; i < size; i++)
+        {
+            newMatrix[i] = new int[size] {0};
+        }
+
+        for (int i = 0; i < matrixSize; i++)
+        {
+            for (int j = 0; j < matrixSize; j++)
+            {
+                newMatrix[i][j] = matrix[i][j];
+            }
+        }
+
+        // 기존 행렬 해제
+        if (matrix != nullptr)
+        {
+            for (int i = 0; i < matrixSize; i++)
+            {
+                delete [ ] matrix[i];
+            }
+
+            delete [ ] matrix;
+        }
+
+        // 새 행렬을 가리키도록 포인터 변경
+        matrix = newMatrix;
+
+        matrixSize = size;
+    }
+
+
+    void resize(int newSize)
+    {
+        capacity = newSize;
+
+        T * newMemory = new T[capacity];
+
+        for (int i = 0; i < capacity; i++)
+        {
+            newMemory[i] = NULL;
+        }
+
+        for (int i = 0; i < size; i++)
+        {
+            newMemory[i] = vertex[i];
+        }
+
+        if (vertex != nullptr)
+        {
+            delete [] vertex;
+        }
+
+        vertex = newMemory;
+    }
+
+    void create()
+    {
+        int row = size;
+        int column = size;
+
+        matrixSize = size;
+
+        matrix = new int * [size];
+
+        for (int i = 0; i < row; i++)
+        {
+            matrix[i] = new int[column];
+        }
+
+        for (int i = 0; i < row; i++)
+        {
+            for (int j = 0; j < column; j++)
+            {
+                matrix[i][j] = NULL;
+            }
         }
     }
 
     void show()
     {
-        if (size >= 0)
+        if (matrixSize >= 0)
         {
-            cout << "  ";
-
-            for (int i = 0; i < size; i++)
+            for (int i = 0; i < matrixSize; i++)
             {
-                cout << vertex[i] << " ";
-            }
-
-            cout << endl;
-
-            for (int i = 0; i < size; i++)
-            {
-                cout << vertex[i] << " ";
-
-                for (int j = 0; j < size; j++)
+                for (int j = 0; j < matrixSize; j++)
                 {
                     cout << matrix[i][j] << " ";
                 }
@@ -82,6 +158,22 @@ public:
                 cout << endl;
             }
         }
+    }
+
+    ~AdjacencyMatrix()
+    {
+        // 행렬 메모리 해제
+        if (matrix != nullptr)
+        {
+            for (int i = 0; i < matrixSize; i++)
+            {
+                delete[] matrix[i];
+            }
+            delete[] matrix;
+        }
+
+        // 정점 배열 메모리 해제
+        delete[] vertex;
     }
 };
 
@@ -95,6 +187,12 @@ int main()
 
     adjacencyMatrix.edge(0, 1);
     adjacencyMatrix.edge(1, 2);
+
+    adjacencyMatrix.show();
+
+    adjacencyMatrix.push('D');
+
+    adjacencyMatrix.edge(2, 3);
 
     adjacencyMatrix.show();
 

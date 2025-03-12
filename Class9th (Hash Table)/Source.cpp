@@ -67,7 +67,7 @@ public:
         return newNode;
     }
 
-    void Insert(KEY key, VALUE value)
+    void insert(KEY key, VALUE value)
     {
         // 해시 함수를 통해서 값을 받는 임시 변수
         int hashIndex = HashFunction(key);
@@ -92,7 +92,7 @@ public:
         bucket[hashIndex].count++;
     }
 
-    void Remove(KEY key)
+    void erase(KEY key)
     {
         // 1. 해시 함수를 통해서 값을 받는 임시 변수
         int hashIndex = HashFunction(key);
@@ -174,10 +174,10 @@ int main()
 {
     HashTable<const char*, int> hashTable;
 
-    hashTable.Insert("Sword", 10000);
-    hashTable.Insert("Armor", 5000);
+    hashTable.insert("Sword", 10000);
+    hashTable.insert("Armor", 5000);
 
-    hashTable.Remove("Hat");
+    hashTable.erase("Hat");
 
     return 0;
 }

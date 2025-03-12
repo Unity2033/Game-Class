@@ -9,7 +9,7 @@ private:
     int size;
     int capacity;
 
-    T* container;
+    T * container;
 public:
     Vector()
     {

@@ -7,6 +7,9 @@
       "RelativeMoniker": "D:0:0:{5AFBAC20-C901-48B8-AEFB-329E878C9C02}|Program.vcxproj|solutionrelative:Program.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{F9817740-5CD4-4524-A4B2-45CE3F9F9AF7}|..\\Class5th (Insert Sort)\\Class5th (Insert Sort).vcxproj|C:\\Users\\Administrator\\Desktop\\Game-Class\\Class5th (Insert Sort)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{883E2EE7-BEA9-4E2B-A051-64F5419F8F5B}|..\\Class4th (Select Sort)\\Class4th (Select Sort).vcxproj|C:\\Users\\Administrator\\Desktop\\Game-Class\\Class4th (Select Sort)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
@@ -26,7 +29,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -52,18 +55,30 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Source.cpp",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Class\\Class5th (Insert Sort)\\Source.cpp",
+              "RelativeDocumentMoniker": "..\\Class5th (Insert Sort)\\Source.cpp",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Game-Class\\Class5th (Insert Sort)\\Source.cpp",
+              "RelativeToolTip": "..\\Class5th (Insert Sort)\\Source.cpp",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAxwCUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-08-14T11:46:18.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Source.cpp",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Class\\Class4th (Select Sort)\\Source.cpp",
               "RelativeDocumentMoniker": "..\\Class4th (Select Sort)\\Source.cpp",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\Game-Class\\Class4th (Select Sort)\\Source.cpp",
               "RelativeToolTip": "..\\Class4th (Select Sort)\\Source.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-13T12:35:41.886Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-13T12:35:41.886Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Source.cpp",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Class\\Class3th (Bubble Sort)\\Source.cpp",
               "RelativeDocumentMoniker": "..\\Class3th (Bubble Sort)\\Source.cpp",
@@ -71,12 +86,11 @@
               "RelativeToolTip": "..\\Class3th (Bubble Sort)\\Source.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-13T11:41:54.455Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-13T11:41:54.455Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Source.cpp",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Class2th (Brute Force)\\Source.cpp",
               "RelativeDocumentMoniker": "..\\..\\Class2th (Brute Force)\\Source.cpp",
@@ -88,7 +102,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Source.cpp",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Class1th (Asymptotic Notation)\\Source.cpp",
               "RelativeDocumentMoniker": "..\\..\\Class1th (Asymptotic Notation)\\Source.cpp",
@@ -106,7 +120,7 @@
               "RelativeDocumentMoniker": "Program.cpp",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\Game-Class\\Program\\Program.cpp",
               "RelativeToolTip": "Program.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAoAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-08-12T11:11:52.229Z",
               "EditorCaption": ""

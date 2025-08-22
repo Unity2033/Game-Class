@@ -2,71 +2,84 @@
 
 using namespace std;
 
-void sort(int list [ ], int start, int end)
+void combine(int list[], int start, int middle, int end)
 {
-	if (start >= end)
+	int count = 0;
+	int left = start;
+	int right = middle + 1;
+
+	int * container = new int[end - start + 1];
+    
+	// 두 부분의 배열을 병합합니다.
+	while (left <= middle && right <= end)
 	{
-		return;
-	}
-
-	// pivot 변수의 값을 설정합니다.
-	int pivot = start;
-
-	// left 변수의 값을 설정합니다.
-	int left = start + 1;
-
-	// right 변수의 값을 설정합니다.
-	int right = end;
-
-	// left가 right보다 커질 때 까지 반복합니다.
-	while (left <= right)
-	{										  
-		// left가 end보다 작거나 같고 list[left]가
-		// list[pivot]보다 작거나 같을 때까지 반복합니다.
-		while (left <= end && list[pivot] >= list[left])
+		if (list[left] <= list[right])
 		{
-			left++; // left의 값을 증가시킵니다.
-		}
-
-		// right가 start보다 크고 list[right]가
-		// list[pivot]보다 크거나 같을 때까지 반복합니다.
-		while (right > start && list[pivot] <= list[right])
-		{
-			right--; // right의 값을 감소시킵니다.
-		}
-
-		if (left > right)
-		{
-			std::swap(list[pivot], list[right]);
+			container[count++] = list[left++];
 		}
 		else
 		{
-			std::swap(list[left], list[right]);
+			container[count++] = list[right++];
 		}
 	}
 
-	// pivot을 기준으로 나누어진 두 배열에 대해
-	// 재귀적으로 퀵 정렬을 호출합니다.
-	sort(list, start, right - 1);
+	// 남은 왼쪽 배열의 요소들을 복사합니다.
+	while (left <= middle)
+	{
+		container[count++] = list[left++];
+	}
 
-	sort(list, right + 1, end);
+	// 남은 오른쪽 배열의 요소들을 복사합니다.
+	while (right <= end)
+	{
+		container[count++] = list[right++];
+	}
+
+	// 원본 배열에 정렬된 임시 배열의 값을 복사합니다.
+	for (int i = 0; i < end - start + 1; i++)
+	{
+		list[start + i] = container[i];
+	}
+
+	delete [ ] container;
+}
+
+void merge_sort(int list[], int start, int end)
+{
+	if (start < end)
+	{
+		int middle = (start + end) / 2;
+
+		merge_sort(list, start, middle);
+		merge_sort(list, middle + 1, end);
+
+		combine(list, start, middle, end);
+	}
 }
 
 int main()
 {
-#pragma region 퀵 정렬
-	// 기준점을 획득한 다음 기준점을 기준으로 배열을 나누고 한 쪽에는
-	// 기준점보다 작은 값들이 위치하게 한 다음 다른 한 쪽에는 기준점보다
-	// 큰 값들이 위치하도록 정렬합니다.
+#pragma region 합병 정렬
+	// 하나의 리스트를 두 개의 균일한 크기로 분할하고 분할된
+	// 부분 리스트를 정렬한 다음, 두 개의 정렬된 부분 리스트를
+	// 합하여 전체가 정렬된 리스트가 되게 하는 방법입니다.
 
-	// 나누어진 하위 배열에 대해 재귀적으로 퀵 정렬을 호출하여
-	// 모든 배열이 기본 배열이 될 때까지 반복하면 정렬합니다.
+	// 1. 리스트의 길이가 0 또는 1이 되면 이미 정렬된 것으로 봅니다.
 
-	int list[] = { 5,3,8,4,1,6,2,7 };
+	// 2. 그렇지 않은 겨우
+
+	// 2-1. 정렬되지 않은 리스트를 절반으로 잘라 비슷한 크기의
+	//      두 부분 리스트로 나눕니다.
+
+	// 2-2. 각 부분 리스트를 재귀적으로 합병 정렬을 이용하여 정렬합니다.
+
+	// 2-3. 두 부분 리스트를 다시 하나의 정렬된 리스트로 병합합니다.
+
+	int list[] = { 3,5,2,7,4,1,8,6 };
 
 	int size = sizeof(list) / sizeof(list[0]);
 
-	sort(list, 0, size - 1);
+	merge_sort(list, 0, size - 1);
 
 	for (const auto& element : list)
 	{

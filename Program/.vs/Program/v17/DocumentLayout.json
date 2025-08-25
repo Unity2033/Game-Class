@@ -7,13 +7,16 @@
       "RelativeMoniker": "D:0:0:{5AFBAC20-C901-48B8-AEFB-329E878C9C02}|Program.vcxproj|solutionrelative:Program.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{8EF2F83F-F448-4009-8037-EBE6ADD9C08B}|..\\Class9th (Divide and Conquer)\\Class9th (Divide and Conquer).vcxproj|C:\\Users\\Administrator\\Desktop\\Game-Class\\Class9th (Divide and Conquer)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72A4A36D-99B3-4C09-9367-8DFCB35C4A34}|..\\Class12th (Merge Sort)\\Class12th (Merge Sort).vcxproj|C:\\Users\\Administrator\\Desktop\\Game-Class\\Class12th (Merge Sort)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E9701F66-91EA-4AB9-8507-AA36A28A0674}|..\\Class11th (Quick Sort)\\Class11th (Quick Sort).vcxproj|C:\\Users\\Administrator\\Desktop\\Game-Class\\Class11th (Quick Sort)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D0CFDECE-77E4-428F-8D9E-328BCFAA94CA}|..\\Class10th (Binary Search)\\Class10th (Binary Search).vcxproj|C:\\Users\\Administrator\\Desktop\\Game-Class\\Class10th (Binary Search)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8EF2F83F-F448-4009-8037-EBE6ADD9C08B}|..\\Class9th (Divide and Conquer)\\Class9th (Divide and Conquer).vcxproj|C:\\Users\\Administrator\\Desktop\\Game-Class\\Class9th (Divide and Conquer)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FED20097-51AB-4948-BA51-D8E22E117F65}|..\\Class8th (Count Sort)\\Class8th (Count Sort).vcxproj|C:\\Users\\Administrator\\Desktop\\Game-Class\\Class8th (Count Sort)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
@@ -47,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 16,
+          "SelectedChildIndex": 17,
           "Children": [
             {
               "$type": "Bookmark",
@@ -71,7 +74,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "Source.cpp",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Class\\Class12th (Merge Sort)\\Source.cpp",
+              "RelativeDocumentMoniker": "..\\Class12th (Merge Sort)\\Source.cpp",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Game-Class\\Class12th (Merge Sort)\\Source.cpp",
+              "RelativeToolTip": "..\\Class12th (Merge Sort)\\Source.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-08-25T11:03:08.468Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Source.cpp",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Class\\Class11th (Quick Sort)\\Source.cpp",
               "RelativeDocumentMoniker": "..\\Class11th (Quick Sort)\\Source.cpp",
@@ -79,12 +94,11 @@
               "RelativeToolTip": "..\\Class11th (Quick Sort)\\Source.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAE4AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-22T11:03:25.98Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-22T11:03:25.98Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Source.cpp",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Class\\Class10th (Binary Search)\\Source.cpp",
               "RelativeDocumentMoniker": "..\\Class10th (Binary Search)\\Source.cpp",
@@ -96,19 +110,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Source.cpp",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Class\\Class9th (Divide and Conquer)\\Source.cpp",
               "RelativeDocumentMoniker": "..\\Class9th (Divide and Conquer)\\Source.cpp",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\Game-Class\\Class9th (Divide and Conquer)\\Source.cpp",
               "RelativeToolTip": "..\\Class9th (Divide and Conquer)\\Source.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC8AAAAAAAAA",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAAC8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-08-20T11:18:02.404Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Source.cpp",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Class\\Class8th (Count Sort)\\Source.cpp",
               "RelativeDocumentMoniker": "..\\Class8th (Count Sort)\\Source.cpp",
@@ -120,7 +134,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Source.cpp",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Class\\Class7th (Sieve of Eratosthenes)\\Source.cpp",
               "RelativeDocumentMoniker": "..\\Class7th (Sieve of Eratosthenes)\\Source.cpp",
@@ -132,7 +146,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Source.cpp",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Class\\Class6th (Euclidean)\\Source.cpp",
               "RelativeDocumentMoniker": "..\\Class6th (Euclidean)\\Source.cpp",
@@ -144,7 +158,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Source.cpp",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Class\\Class5th (Insert Sort)\\Source.cpp",
               "RelativeDocumentMoniker": "..\\Class5th (Insert Sort)\\Source.cpp",
@@ -156,7 +170,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Source.cpp",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Class\\Class4th (Select Sort)\\Source.cpp",
               "RelativeDocumentMoniker": "..\\Class4th (Select Sort)\\Source.cpp",
@@ -168,7 +182,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Source.cpp",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Class\\Class3th (Bubble Sort)\\Source.cpp",
               "RelativeDocumentMoniker": "..\\Class3th (Bubble Sort)\\Source.cpp",
@@ -180,7 +194,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Source.cpp",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Class2th (Brute Force)\\Source.cpp",
               "RelativeDocumentMoniker": "..\\..\\Class2th (Brute Force)\\Source.cpp",
@@ -192,7 +206,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Source.cpp",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Class1th (Asymptotic Notation)\\Source.cpp",
               "RelativeDocumentMoniker": "..\\..\\Class1th (Asymptotic Notation)\\Source.cpp",
@@ -210,7 +224,7 @@
               "RelativeDocumentMoniker": "Program.cpp",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\Game-Class\\Program\\Program.cpp",
               "RelativeToolTip": "Program.cpp",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAswCgAAAAhAAAA",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAACcAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-08-12T11:11:52.229Z",
               "EditorCaption": ""

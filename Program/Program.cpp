@@ -1,6 +1,42 @@
 ﻿#include <iostream>
+#include <queue>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
 
 using namespace std;
+
+template <typename T>
+class Graph
+{
+private:
+	unordered_set<T> vertices;
+	unordered_map<T, int> degree;
+	unordered_map<T, vector<T>> adjacencyList;
+
+public:
+	void insert(const T& i, const T& j)
+	{
+		adjacencyList[i].push_back(j);
+
+		degree[j]++;
+
+		vertices.insert(i);
+		vertices.insert(j);
+
+		if (degree.count(i) == false)
+		{
+			degree[i] = 0;
+		}
+	}
+
+	void sort()
+	{
+
+	}
+
+};
+
 
 int main()
 {
@@ -23,6 +59,19 @@ int main()
 	// 3. 간선 제거 이후에 진입 차수가 0이 된 정점을 Queue에 삽입합니다.
 
 	// 4. Queue가 비어있을 때까지 2번 ~ 3번 작업을 반복적으로 수행합니다.
+
+	Graph<int> graph;
+
+	graph.insert(1, 2);
+	graph.insert(1, 5);
+
+	graph.insert(2, 3);
+	graph.insert(3, 4);
+
+	graph.insert(4, 6);
+
+	graph.insert(5, 6);
+	graph.insert(6, 7);
 
 #pragma endregion
 
